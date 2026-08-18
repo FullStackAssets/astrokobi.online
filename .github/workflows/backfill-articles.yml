@@ -38,7 +38,6 @@ jobs:
 
       - name: Run backfill
         env:
-          # Must match the Vercel project's NEXT_PUBLIC_SITE_VARIANT so new
           # posts are tagged for the correct domain (astrokobi.online).
           NEXT_PUBLIC_SITE_VARIANT: astrokobi-online
           # LLM key — name must match `llm.apiKeyEnv` in src/site.config.ts.
@@ -53,7 +52,6 @@ jobs:
 
       - name: Commit and push
         env:
-          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
           PRODUCTION_BRANCH: main
         run: |
           git config user.name "trendblog-bot"
@@ -80,12 +78,7 @@ jobs:
           for attempt in 1 2 3 4 5; do
             if git push origin "HEAD:${branch}"; then
               echo "Pushed on attempt ${attempt}."
-              if [ -n "${VERCEL_DEPLOY_HOOK_URL}" ] && [ "${branch}" = "${PRODUCTION_BRANCH}" ]; then
-                echo "Triggering Vercel deploy hook…"
-                if curl -fsS -m 30 --retry 3 -X POST "${VERCEL_DEPLOY_HOOK_URL}" >/dev/null; then
-                  echo "Vercel redeploy triggered."
                 else
-                  echo "Vercel deploy hook call failed (non-fatal)." >&2
                 fi
               fi
               exit 0

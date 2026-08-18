@@ -2,8 +2,6 @@ import type { Metadata } from 'next';
 import { Space_Grotesk, IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google';
 import Link from 'next/link';
 import Script from 'next/script';
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, websiteJsonLd } from '@/lib/structured-data';
 import { SubscribeForm } from '@/components/SubscribeForm';
 import { AdSlot } from '@/components/AdSlot';
@@ -89,8 +87,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="relative z-10">{children}</main>
         <Footer />
-        <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );
