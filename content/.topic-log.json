@@ -776,6 +776,13 @@
       "url": "https://science.nasa.gov/image-article/apod-2026-october-19-treble-clef-unusual-x-ray-hot-radio-source/",
       "publishedAt": "2026-10-19T05:00:25.008Z",
       "signature": "b4e191508635d75d"
+    },
+    {
+      "slug": "spacex-bandwagon-5-launch",
+      "title": "Bandwagon-5 Mission",
+      "url": "https://www.spacex.com/launches/bandwagon5",
+      "publishedAt": "2026-10-19T06:00:27.439Z",
+      "signature": "4ea0ddef21b1b307"
     }
   ]
 }
