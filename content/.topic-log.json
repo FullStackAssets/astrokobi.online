@@ -804,6 +804,13 @@
       "url": "https://spaceflightnow.com/2026/10/18/live-coverage-spacex-to-launch-starfall-reentry-capsule-31-customer-payloads-on-bandwagon-5-rideshare-mission/",
       "publishedAt": "2026-10-19T09:00:15.530Z",
       "signature": "5aea9510432f0c60"
+    },
+    {
+      "slug": "spacex-bandwagon-5-launch",
+      "title": "Bandwagon-5 Mission",
+      "url": "https://www.spacex.com/launches/bandwagon5",
+      "publishedAt": "2026-10-19T10:00:19.249Z",
+      "signature": "4ea0ddef21b1b307"
     }
   ]
 }
