@@ -811,6 +811,13 @@
       "url": "https://www.spacex.com/launches/bandwagon5",
       "publishedAt": "2026-10-19T10:00:19.249Z",
       "signature": "4ea0ddef21b1b307"
+    },
+    {
+      "slug": "houston-weekend-weather-noreaster-forecast",
+      "title": "Houston weather: Oct. 18 morning forecast",
+      "url": "https://www.fox26houston.com/weather/houston-weather-crisp-weekend-warming-trend-noreaster-is-forming",
+      "publishedAt": "2026-10-19T11:00:20.584Z",
+      "signature": "c2f170f04fb60881"
     }
   ]
 }
