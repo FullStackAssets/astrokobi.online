@@ -783,6 +783,13 @@
       "url": "https://www.spacex.com/launches/bandwagon5",
       "publishedAt": "2026-10-19T06:00:27.439Z",
       "signature": "4ea0ddef21b1b307"
+    },
+    {
+      "slug": "spacex-bandwagon-5-launch",
+      "title": "Bandwagon-5 Mission",
+      "url": "https://www.spacex.com/launches/bandwagon5",
+      "publishedAt": "2026-10-19T07:00:43.368Z",
+      "signature": "4ea0ddef21b1b307"
     }
   ]
 }
