@@ -1,0 +1,62 @@
+---
+site: "astrokobi-online"
+title: "Why Half‑Sine Hammer Taps Aren’t Sufficient for Accurate Modal Tests"
+description: "NASA explains why the shape of hammer‑tap forces matters more than a simple half‑sine, outlining measurement and bandwidth criteria for valid modal tests."
+date: "2026-11-02T21:02:33.414Z"
+category: "cosmos"
+tags: 
+  - "hammer-test"
+  - "modal-analysis"
+  - "vibration-measurement"
+  - "test-adequacy"
+hero: 
+  url: ""
+  alt: ""
+  credit: ""
+  creditUrl: ""
+sources: 
+  - title: "TB 26-09 Measured Hammer-Tap Inputs"
+    url: "https://www.nasa.gov/centers-and-facilities/nesc/tb-26-09-measured-hammer-tap-inputs/"
+  - title: "TB 26-09 Measured Hammer-Tap Inputs - NASA"
+    url: "https://www.nasa.gov/centers-and-facilities/nesc/tb-26-09-measured-hammer-tap-inputs/"
+---
+
+The latest NASA guidance on instrumented hammer testing challenges a long‑standing shortcut: treating a half‑sine pulse as a universal surrogate for real impact forces. Researchers measured full‑force histories—including crest ripples and separated contacts—to show how these nuances affect modal excitation. The findings matter because engineers rely on hammer tests to certify spacecraft structures before they face the extreme loads of launch and operation.
+
+<Callout type="takeaway">A half‑sine shape alone does not guarantee adequate excitation; comprehensive force measurement is essential.</Callout>
+
+## What happened
+NASA’s Langley Research Center documented a series of hammer‑tap experiments where the applied force was captured with high‑bandwidth sensors. The data revealed three distinct waveforms: a textbook half‑sine, a half‑sine with crest rippling, and a sequence of separated contacts that introduce zero‑force intervals. Spectral analysis showed that the half‑sine contains nulls at odd multiples of its fundamental frequency, while ripples and re‑contacts fill those gaps, altering the excitation bandwidth.
+
+The report emphasizes that adequacy depends on four measurable factors: sensor bandwidth, calibration accuracy, dynamic range, and time synchronization between force and response channels. When these are satisfied, the recorded force history—regardless of shape—provides a reliable basis for modal analysis and subsequent pyro‑shock testing.
+
+## Why it matters
+If engineers accept a half‑sine as a default, they risk missing critical frequency content, leading to incomplete modal identification and potentially unsafe designs. Accurate force capture ensures that the excitation covers the frequency, amplitude, and nonlinear ranges required for the specific test objective. This directly impacts the safety margins of satellites, crewed capsules, and other space‑flight hardware.
+
+<ProsCons>
+  <Pros>
+    <li>Full‑force capture reveals hidden spectral content.</li>
+    <li>Improved confidence in modal model fidelity.</li>
+    <li>Better alignment between ground testing and in‑flight loads.</li>
+  </Pros>
+  <Cons>
+    <li>Higher instrumentation cost and complexity.</li>
+    <li>Increased data‑processing requirements.</li>
+    <li>Potential for over‑engineering if criteria are misapplied.</li>
+  </Cons>
+</ProsCons>
+
+## How to think about it
+Treat each hammer test as a measurement problem, not a waveform problem. First, define the test objective: frequency range, amplitude envelope, and any nonlinear behavior to be captured. Then verify that the force sensor meets the required bandwidth and dynamic range, and that its output is time‑synchronized with the response sensors. Finally, inspect the raw spectrum—look for gaps, noise floor, and clipping—before declaring the test adequate.
+
+<Callout type="warning">Do not assume that a visually smooth half‑sine pulse guarantees sufficient excitation; always validate with measured spectra.</Callout>
+
+## FAQ
+<FAQ>
+  <Question q="Can I use a cheaper sensor if I only need a half‑sine shape?">No. Even a half‑sine requires bandwidth and dynamic range sufficient to capture any high‑frequency ripples that may be present in the actual impact.
+  </Question>
+  <Question q="What is the minimum bandwidth needed for modal testing?">The sensor should comfortably exceed the highest frequency of interest—typically at least twice the target modal frequency—to avoid aliasing and ensure accurate spectral representation.
+  </Question>
+  <Question q="How often should I repeat hammer tests?">Repeat only when a measurement deficiency is identified—such as clipping, poor synchronization, or insufficient bandwidth—otherwise a single well‑documented test is sufficient for the defined objective.
+  </Question>
+</FAQ>
