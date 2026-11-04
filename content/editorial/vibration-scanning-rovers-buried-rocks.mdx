@@ -1,0 +1,60 @@
+---
+site: "astrokobi-online"
+title: "Vibration Scanning Lets Rovers Detect Buried Rocks on Mars and Other Worlds"
+description: "Virginia Tech researchers use laser vibrometry to map subsurface rocks, helping future landers avoid hidden obstacles."
+date: "2026-11-04T03:02:16.870Z"
+category: "cosmos"
+tags: 
+  - "vibrations"
+  - "rover"
+  - "subsurface"
+  - "laser-doppler"
+  - "planetary-science"
+hero: 
+  url: "https://live.staticflickr.com/4115/4802850507_eb8e23f769_b.jpg"
+  alt: "Yellow Cosmos, Cold Spring, NY"
+  credit: "Puzzler4879"
+  creditUrl: "https://www.flickr.com/photos/24882165@N07/4802850507"
+sources: 
+  - title: "Using vibrations to reveal what lies beneath other planets' surfaces"
+    url: "https://phys.org/news/2026-11-vibrations-reveal-beneath-planets-surfaces.html"
+  - title: "Using vibrations to reveal what lies beneath other planets' surfaces"
+    url: "https://phys.org/news/2026-11-vibrations-reveal-beneath-planets-surfaces.html"
+---
+
+When a rover touches down on an alien world, unseen boulders can jeopardize its mission. A team at Virginia Tech has demonstrated that scanning surface vibrations can tell how deep rocks lie beneath the regolith. By striking a surface with an instrumented hammer and recording the response with a scanning laser Doppler vibrometer, they identified the depth of 18 buried concrete blocks. The experiment shows a path toward non‑intrusive subsurface mapping for future landers. Understanding what lies below the surface could save time, fuel, and hardware on missions to Mars, the Moon, and beyond.
+
+<Callout type="takeaway">Laser vibrometry can reveal hidden rocks, letting rovers choose safer landing spots.</Callout>
+
+## What happened
+Virginia Tech assistant professor Erik Komendera and Ph.D. candidate Yiyan Ruan published a study in the IEEE Sensors Journal describing a vibration‑based sensing approach for planetary landers. The method uses an instrumented hammer to generate a brief impact on the terrain and a scanning laser Doppler vibrometer to capture the resulting surface vibrations from a distance.
+
+In their laboratory test, the researchers buried 18 concrete blocks of varying size and shape at different depths in a sand substrate. After each impact they recorded the vibration signatures and demonstrated that the signal characteristics—frequency content and decay rate—correlated reliably with block depth, allowing them to infer how far below the surface each object lay.
+
+## Why it matters
+Knowing whether a rock is exposed or buried changes landing‑site selection, excavation planning, and rover navigation. A hidden boulder can damage wheels, drill bits, or sampling tools, increasing mission risk and cost. By providing a non‑contact way to map subsurface hazards, vibration scanning complements radar and imaging, offering redundancy and higher resolution in the first few meters of regolith. The technique also has terrestrial uses, such as assessing buried infrastructure after earthquakes or landslides.
+
+<ProsCons>
+  <Pros>
+    <li>Non‑intrusive: no need to dig before assessment.</li>
+    <li>Works from a distance, preserving rover hardware.</li>
+    <li>Provides depth estimates for objects a few centimeters to several decimeters below the surface.</li>
+  </Pros>
+  <Cons>
+    <li>Requires a clear line‑of‑sight to the impact point.</li>
+    <li>Signal can be attenuated in highly absorptive or dusty regolith.</li>
+    <li>Limited to relatively shallow depths; deeper targets may be indistinguishable.</li>
+  </Cons>
+</ProsCons>
+
+## How to think about it
+Mission planners should treat vibration sensing as a complementary layer in a multi‑sensor hazard‑avoidance suite. Integrate a lightweight impact device and a compact vibrometer on the rover’s mast, then schedule brief “tap‑and‑listen” scans of candidate landing zones before committing to descent. Combine the depth maps with radar and high‑resolution imagery to prioritize sites that are both flat and free of hidden obstacles. For long‑duration surface operations, periodic vibration checks can monitor changes caused by dust accumulation or small landslides.
+
+<Callout type="warning">Vibration data alone should not be the sole determinant of safety; in highly absorptive soils the signal may be too weak to detect buried hazards.</Callout>
+
+## FAQ
+<FAQ>
+  <Question q="Can this technique be used on the Moon?">Yes. The Moon’s regolith transmits seismic waves efficiently, so a laser‑based vibrometer could detect shallow buried rocks, though the lack of atmosphere requires careful calibration of the laser system.</Question>
+  <Question q="How deep can the vibrations detect buried objects?">The laboratory study reliably distinguished objects up to several decimeters deep; deeper detection would need stronger impacts or more sensitive instrumentation.</Question>
+  <Question q="What hardware does a rover need to implement this method?">A compact impactor (or a hammer‑like actuator) and a scanning laser Doppler vibrometer, both mounted to maintain line‑of‑sight to the surface, are sufficient. Power and data processing requirements are modest compared with radar systems.</Question>
+</FAQ>
