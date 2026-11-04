@@ -1,0 +1,60 @@
+---
+site: "astrokobi-online"
+title: "JWST glare‑removal algorithm uncovers hidden giant exoplanet in archival data"
+description: "A new computational method cuts JWST glare, boosting sensitivity up to 15× and revealing a giant exoplanet hidden in two‑year‑old data."
+date: "2026-11-04T16:00:38.193Z"
+category: "cosmos"
+tags: 
+  - "jwst"
+  - "exoplanets"
+  - "glare-removal"
+  - "machine-learning"
+  - "astronomy"
+hero: 
+  url: "https://live.staticflickr.com/8885/16727451554_9211d7df10_b.jpg"
+  alt: "#cosmos"
+  credit: "Khánh Hmoong"
+  creditUrl: "https://www.flickr.com/photos/7997148@N05/16727451554"
+sources: 
+  - title: "Giant planet emerges from two-year-old JWST data thanks to glare-removal technique"
+    url: "https://phys.org/news/2026-11-giant-planet-emerges-year-jwst.html"
+  - title: "Giant planet emerges from two-year-old JWST data thanks to glare-removal technique"
+    url: "https://phys.org/news/2026-11-giant-planet-emerges-year-jwst.html"
+---
+
+The James Webb Space Telescope has captured breathtaking images of distant galaxies, yet its view of nearby stars is often blinded by stellar glare. A team from Northwestern University has now applied a novel computational technique that strips away that glare, exposing a giant exoplanet that was invisible in the original data. The discovery comes from re‑examining two‑year‑old JWST observations, showing that powerful insights can still be mined from existing archives. This breakthrough could reshape how astronomers hunt for worlds around other stars.
+
+<Callout type="takeaway">Advanced glare‑removal can reveal hidden exoplanets without new hardware.</Callout>
+
+## What happened
+The researchers combined physics‑based modeling of JWST’s optics with machine‑learning algorithms that learn tiny imperfections—shifts of just a few nanometers—in the telescope’s mirrors. By accurately simulating how light propagates through the instrument, the method can subtract stellar glare far more precisely than conventional pipelines, improving sensitivity by up to fifteen times.
+
+When the team reprocessed archival JWST images using this approach, a massive planet emerged in the data where standard reductions showed only the bright star. The finding was reported in a Nature paper published on November 4, confirming the planet’s existence through independent checks.
+
+## Why it matters
+Removing glare without altering the telescope extends JWST’s scientific reach, allowing astronomers to detect smaller and colder planets that were previously out of reach. The technique leverages existing data, maximizing the return on the multi‑billion‑dollar investment in JWST. It also provides a template for enhancing other high‑contrast instruments, potentially accelerating the search for Earth‑like worlds.
+
+<ProsCons>
+  <Pros>
+    <li>Boosts effective sensitivity without new hardware.</li>
+    <li>Enables discovery of planets hidden in archival data.</li>
+    <li>Applicable to other high‑contrast telescopes.</li>
+  </Pros>
+  <Cons>
+    <li>Requires precise knowledge of telescope systematics.</li>
+    <li>Computationally intensive, demanding significant processing power.</li>
+    <li>Risk of false positives if the model over‑fits noise.</li>
+  </Cons>
+</ProsCons>
+
+## How to think about it
+Astronomers should treat this method as a complementary analysis step rather than a replacement for standard pipelines. Start by validating the algorithm on calibration stars where the planet signal is known to be absent. Cross‑check any new detections with independent observations or alternative reduction techniques before claiming a discovery. Incorporating glare‑removal early in data‑processing workflows can streamline follow‑up planning and prioritize the most promising candidates.
+
+<Callout type="warning">Do not assume every bright spot after glare subtraction is a planet; always verify with independent data to avoid misinterpretation.</Callout>
+
+## FAQ
+<FAQ>
+  <Question q="Can this glare‑removal technique be adapted for other telescopes?">Yes, the underlying principle of modeling instrument imperfections and using machine learning can be transferred to any high‑contrast imaging system, though each telescope requires a tailored model of its optics.</Question>
+  <Question q="How demanding is the computational workload?">The process involves detailed optical simulations and training of machine‑learning models, typically requiring high‑performance computing clusters or GPU resources for large datasets.</Question>
+  <Question q="What new types of exoplanets become observable?">With a fifteen‑fold sensitivity boost, astronomers can now detect planets that are smaller, cooler, and farther from their host stars than previously possible, expanding the catalog of sub‑Jovian and potentially rocky worlds.</Question>
+</FAQ>
