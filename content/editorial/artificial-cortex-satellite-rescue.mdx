@@ -1,0 +1,55 @@
+---
+site: "astrokobi-online"
+title: "Artificial CORTEX Framework Enables Autonomous Rendezvous for Zombie Satellite Rescue"
+description: "An AI‑driven CORTEX system offers autonomous guidance for repairing dead LEO satellites, aiming to curb debris and keep orbital traffic safe."
+date: "2026-11-09T19:00:40.410Z"
+category: "cosmos"
+tags: 
+  - "satellite"
+  - "rendezvous"
+  - "debris"
+  - "ai"
+  - "orbit"
+hero: 
+  url: "https://live.staticflickr.com/4115/4802850507_eb8e23f769_b.jpg"
+  alt: "Yellow Cosmos, Cold Spring, NY"
+  credit: "Puzzler4879"
+  creditUrl: "https://www.flickr.com/photos/24882165@N07/4802850507"
+sources: 
+  - title: "An Artificial CORTEX to Guide Satellite Rescue Missions"
+    url: "https://www.universetoday.com/articles/an-artificial-cortex-to-guide-satellite-rescue-missions"
+  - title: "An Artificial CORTEX to Guide Satellite Rescue Missions"
+    url: "https://www.universetoday.com/articles/an-artificial-cortex-to-guide-satellite-rescue-missions"
+---
+
+The low‑Earth orbit is becoming crowded, with almost 20,000 active satellites and more than 3,500 non‑functional “zombie” units that cannot signal their presence. Researchers at the University of Illinois have unveiled CORTEX, an autonomous, convex‑based framework that designs and guides close‑range rendezvous trajectories for satellite repair missions. By automating the rendezvous and proximity operations that were once bespoke, CORTEX could turn ad‑hoc rescue flights into routine services. If successful, the system would help prevent collisions that could trigger a Kessler‑type cascade of debris.
+<Callout type="takeaway">CORTEX aims to make satellite rescue an automated, scalable service, reducing collision risk in an increasingly congested LEO.</Callout>
+## What happened
+The orbital environment has shifted dramatically: tracked objects in LEO rose from about 13,700 in 2019 to over 24,000 in 2025, and the population of dead or unresponsive satellites now exceeds 3,500. These “zombies” pose a hidden danger because they cannot broadcast collision‑avoidance data, increasing the probability of accidental impacts.
+
+In response, a team led by Minduli Wijayatunga published a paper in Acta Astronautica describing CORTEX, an end‑to‑end convex optimization framework that generates safe, fuel‑efficient rendezvous trajectories and commands a hardware testbed to execute them. The system integrates perception, planning, and guidance into a single autonomous loop, allowing a servicer spacecraft to approach, dock, and repair a target without human‑in‑the‑loop decisions.
+
+Initial hardware experiments have demonstrated sub‑meter accuracy in close‑range navigation and successful execution of a mock repair maneuver, providing the first experimental validation of a fully autonomous RPO pipeline for satellite servicing.
+## Why it matters
+The ability to autonomously service or de‑orbit zombie satellites could dramatically reduce the risk of cascade collisions that would otherwise generate thousands of new debris fragments. By turning rescue missions into repeatable, low‑cost operations, CORTEX also lowers the economic barrier for satellite operators to maintain constellation health, preserving the utility of LEO for communications, Earth observation, and scientific research.
+<ProsCons>
+  <Pros>
+    <li>Scales to thousands of targets without bespoke engineering.</li>
+    <li>Reduces reliance on ground‑based operators, cutting response time.</li>
+    <li>Potentially lowers the long‑term growth of orbital debris.</li>
+  </Pros>
+  <Cons>
+    <li>Autonomous guidance introduces new failure modes that must be rigorously vetted.</li>
+    <li>Hardware validation is still limited to laboratory settings, not full space conditions.</li>
+    <li>Regulatory frameworks for autonomous debris removal are still under development.</li>
+  </Cons>
+</ProsCons>
+## How to think about it
+Treat CORTEX as a modular service layer: first assess the target satellite’s physical accessibility, then let the autonomous planner generate a collision‑free trajectory, and finally verify the plan with ground‑based safety analysis before execution. Operators should integrate CORTEX outputs into existing traffic‑management tools rather than replace them outright.
+<Callout type="warning">Do not rely on CORTEX for critical missions until extensive on‑orbit testing confirms its safety and reliability.</Callout>
+## FAQ
+<FAQ>
+  <Question q="Can CORTEX be used on any satellite, or only specific designs?">The current implementation assumes a servicer equipped with compatible docking hardware and a target that can expose a grapple point; retrofitting older satellites may be required.</Question>
+  <Question q="How does CORTEX differ from existing mission‑extension vehicles?">Unlike mission‑extension vehicles that provide thrust, CORTEX focuses on autonomous trajectory generation and precise guidance for inspection, repair, or de‑orbit tasks.</Question>
+  <Question q="What are the next steps before CORTEX can be deployed operationally?">The team plans on‑orbit demonstration missions, integration with regulatory approval processes, and scaling the testbed to handle a broader range of orbital conditions.</Question>
+</FAQ>
