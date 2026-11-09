@@ -1,0 +1,58 @@
+---
+site: "astrokobi-online"
+title: "ESA’s PRETTY CubeSat Plays Doom via Orbital Voice Command, Demonstrating In‑Space Speech Control"
+description: "A ground station used voice commands to launch Doom on ESA’s PRETTY CubeSat, proving speech‑controlled satellite operations."
+date: "2026-11-09T12:00:32.143Z"
+category: "cosmos"
+tags: 
+  - "satellite"
+  - "voice-control"
+  - "doom"
+  - "spacecraft"
+  - "ai"
+hero: 
+  url: "https://live.staticflickr.com/7165/6506573581_f7c004bcfd_b.jpg"
+  alt: "District gets state-of-the-art emergency response vehicle"
+  credit: "U.S. Army Corps of Engineers Los Angeles District"
+  creditUrl: "https://www.flickr.com/photos/51640646@N04/6506573581"
+sources: 
+  - title: " Yes, it runs 'Doom': Satellite plays iconic game in world's 1st demonstration of orbital voice control "
+    url: "https://www.space.com/space-exploration/satellites/yes-it-runs-doom-satellite-plays-iconic-game-in-worlds-1st-demonstration-of-orbital-voice-control"
+  - title: "Yes, it runs 'Doom': Satellite plays iconic game in world's 1st demonstration of orbital voice control"
+    url: "https://www.space.com/space-exploration/satellites/yes-it-runs-doom-satellite-plays-iconic-game-in-worlds-1st-demonstration-of-orbital-voice-control"
+---
+
+On July 27, 2026, a rooftop in Oslo shouted “PRETTY play Doom Doom Doom” to an ESA‑operated CubeSat, and the satellite launched the classic 1993 shooter in orbit. The experiment, carried out by the OPS‑SAT Space Lab and amateur radio volunteers, marked the world’s first demonstration of voice‑controlled satellite operation. By proving that a spacecraft can receive, transcribe, and act on spoken commands, the test opens a path to hands‑free emergency signaling and AI‑driven mission control. The feat also showed that low‑cost hobbyist efforts can push the boundaries of space technology.
+
+<Callout type="takeaway">Voice‑controlled satellites could let anyone in distress trigger rescue actions with a simple spoken word.</Callout>
+
+## What happened
+Radio amateurs made six failed attempts to transmit a voice command to the PRETTY CubeSat between April and July. On the seventh pass over Oslo, the transmission “PRETTY play Doom Doom Doom” was received, transcribed on board, and triggered the Doom engine, which logged a short play session. The team narrowed the satellite’s receiver bandwidth and added a voice‑recognition module supplied by Tanagra Space, enabling the system to distinguish spoken words from noise.
+
+## Why it matters
+Hands‑free voice control removes the need for complex ground‑station command sequences, potentially allowing people in remote or disaster zones to issue a simple “mayday” that a satellite can understand and relay to rescue services. Coupled with on‑board AI transcription, the technology could automate emergency alerts, environmental monitoring, and even routine satellite tasks. However, exposing a spacecraft to voice commands also creates a new attack surface that must be secured.
+
+<ProsCons>
+  <Pros>
+    <li>Enables low‑bandwidth, intuitive control for emergency situations.</li>
+    <li>Demonstrates that hobbyist groups can contribute to cutting‑edge space tech.</li>
+    <li>Provides a testbed for integrating AI transcription on small satellites.</li>
+  </Pros>
+  <Cons>
+    <li>Voice commands are vulnerable to spoofing or accidental activation.</li>
+    <li>Limited by signal‑to‑noise ratio and bandwidth constraints in orbit.</li>
+    <li>Current implementations lack redundancy for critical mission operations.</li>
+  </Cons>
+</ProsCons>
+
+## How to think about it
+When designing future satellite services, treat voice control as an optional interface layered on top of traditional telemetry. Start with a secure authentication token embedded in the spoken phrase, and limit voice‑activated functions to non‑critical actions such as status requests or distress alerts. Test the system under realistic noise conditions and incorporate fallback commands that require multiple confirmations.
+
+<Callout type="warning">Do not rely on voice commands as the sole means of executing safety‑critical maneuvers until robust authentication and error‑handling are proven.</Callout>
+
+## FAQ
+<FAQ>
+  <Question q="How does a satellite transcribe speech without an internet connection?">The onboard processor runs a lightweight speech‑to‑text model pre‑loaded with a limited vocabulary, allowing it to match incoming audio to known command phrases.</Question>
+  <Question q="What emergency scenarios could benefit from this technology?">A hiker lost in a canyon could transmit a simple “help” phrase to a passing satellite, which would then forward the location and request to rescue agencies.</Question>
+  <Question q="How can operators protect against unauthorized voice commands?">Implement cryptographic challenge‑response phrases, require multi‑word passcodes, and continuously monitor for anomalous audio patterns before executing actions.</Question>
+</FAQ>
