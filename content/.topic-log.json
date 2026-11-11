@@ -2813,6 +2813,13 @@
       "url": "https://www.spacex.com/launches/ussf266",
       "publishedAt": "2026-11-11T14:00:29.501Z",
       "signature": "fbdb9f6b48fd6170"
+    },
+    {
+      "slug": "bennu-asteroid-organic-origins",
+      "title": "Bennu asteroid analysis suggests unexpected origins for organics in space",
+      "url": "https://phys.org/news/2026-11-bennu-asteroid-analysis-unexpected-space.html",
+      "publishedAt": "2026-11-11T15:00:32.312Z",
+      "signature": "ddd3769fa020bd21"
     }
   ]
 }
