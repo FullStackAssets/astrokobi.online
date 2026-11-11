@@ -2806,6 +2806,13 @@
       "url": "https://earthsky.org/space/what-is-a-runaway-star/",
       "publishedAt": "2026-11-11T12:00:46.806Z",
       "signature": "1d17736ca3eae1db"
+    },
+    {
+      "slug": "spacex-ussf-266-launch",
+      "title": "USSF-266 Mission",
+      "url": "https://www.spacex.com/launches/ussf266",
+      "publishedAt": "2026-11-11T14:00:29.501Z",
+      "signature": "fbdb9f6b48fd6170"
     }
   ]
 }
