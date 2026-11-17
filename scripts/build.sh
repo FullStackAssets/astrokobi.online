@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 set -e
 
 # Build script that handles TinaCMS configuration gracefully
