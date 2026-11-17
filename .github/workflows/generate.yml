@@ -53,6 +53,9 @@ jobs:
           DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
         run: npx tsx scripts/run-local.ts
 
+      - name: Normalize generated MDX
+        run: node scripts/normalize-mdx.mjs
+
       - name: Commit and push generated content
         run: |
           set -euo pipefail

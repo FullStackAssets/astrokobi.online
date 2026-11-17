@@ -34,6 +34,8 @@ fi
 export NEXT_PUBLIC_SITE_VARIANT="astrokobi-online"
 echo "--- generation: npx tsx scripts/run-local.ts ---"
 npx tsx scripts/run-local.ts
+echo "--- normalize generated MDX ---"
+node scripts/normalize-mdx.mjs || echo "WARNING: MDX normalization failed; build may fail on malformed posts." >&2
 
 git config user.name "trendblog-bot"
 git config user.email "bot@trendblog.dev"
@@ -51,7 +53,8 @@ branch="${GIT_BRANCH:-main}"
 
 for attempt in 1 2 3 4 5; do
   if git push origin "HEAD:${branch}"; then
-    echo "Pushed on attempt ${attempt}; the Pages workflow will publish the commit."
+    echo "Pushed on attempt ${attempt}; rebuilding the static export so the live site picks it up."
+    npm run build || echo "WARNING: static rebuild failed; live site stays on the previous build." >&2
     echo "=== run-publish done: $(date -u +%Y-%m-%dT%H:%M:%SZ) ==="
     exit 0
   fi
