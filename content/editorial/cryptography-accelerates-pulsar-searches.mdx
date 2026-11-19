@@ -1,0 +1,62 @@
+---
+site: "astrokobi-online"
+title: "Cryptography Technique Accelerates Pulsar Searches by Up to a Million‑Fold"
+description: "A new cryptography‑based algorithm finds gamma‑ray pulsars a million times faster, turning years of compute into hours."
+date: "2026-11-19T21:00:36.697Z"
+category: "cosmos"
+tags: 
+  - "pulsars"
+  - "cryptography"
+  - "gamma-ray"
+  - "data-analysis"
+  - "astrophysics"
+hero: 
+  url: "https://live.staticflickr.com/4118/4901241763_18cbcc9131_b.jpg"
+  alt: "Eclipsing Pulsar Promises Clues to Crushed Matter"
+  credit: "NASA Goddard Photo and Video"
+  creditUrl: "https://www.flickr.com/photos/24662369@N07/4901241763"
+sources: 
+  - title: "Cryptography-inspired method speeds up searches for elusive pulsars"
+    url: "https://phys.org/news/2026-11-cryptography-method-elusive-pulsars.html"
+  - title: "Cryptography-inspired method speeds up searches for elusive pulsars"
+    url: "https://phys.org/news/2026-11-cryptography-method-elusive-pulsars.html"
+---
+
+A team of astronomers and cryptographers has unveiled a new algorithm that can sift through NASA’s Fermi gamma‑ray data a million times faster than previous techniques. Using a cryptography‑inspired approach, they identified the pulsar PSR J1622‑7204, spinning 261 times per second, in just ten hours on a standard laptop. Earlier methods would have required centuries of CPU time to make the same discovery. This speedup opens the door to a systematic hunt for hidden neutron stars across the entire Fermi archive. Faster searches could dramatically expand the known pulsar population and sharpen tests of extreme physics.
+
+<Callout type="takeaway">The new cryptographic algorithm turns century‑scale pulsar searches into hour‑scale tasks.</Callout>
+
+## What happened
+The researchers applied a cryptography‑derived search algorithm—originally designed for fast pattern matching—to 15 years of photon data from NASA’s Fermi Gamma‑ray Space Telescope. Co‑authors Dotan Gazith and Barak Zackay adapted the method to explore the four‑dimensional parameter space (spin frequency, spin‑down rate, sky position) that defines a pulsar’s signal.
+
+By running the algorithm on a conventional desktop processor for roughly ten hours, the team uncovered PSR J1622‑7204, an isolated neutron star rotating 261 times per second. In contrast, the best prior technique would have needed an estimated 600 years of CPU time to achieve the same sensitivity.
+
+The findings were detailed in a Physical Review Letters paper, highlighting how the approach can be scaled to the full Fermi dataset and potentially to other high‑energy surveys.
+
+## Why it matters
+The computational bottleneck has long limited blind searches for gamma‑ray pulsars, leaving many candidates undiscovered. By collapsing the search time from centuries to hours, the method enables exhaustive scans of the entire sky, increasing the odds of finding rare or exotic neutron stars. A larger pulsar census improves constraints on the equation of state of ultra‑dense matter, tests of general relativity, and the mapping of Galactic gamma‑ray backgrounds.
+
+<ProsCons>
+  <Pros>
+    <li>Reduces compute cost from centuries to hours, making full‑archive searches feasible.</li>
+    <li>Allows exhaustive coverage of the multidimensional search space without sacrificing sensitivity.</li>
+    <li>Accelerates the discovery pipeline, enabling timely follow‑up observations.</li>
+  </Pros>
+  <Cons>
+    <li>Optimized for gamma‑ray pulsars; may be less effective for radio or X‑ray searches.</li>
+    <li>Relies on high‑quality, long‑baseline archival data; newer or sparse datasets may not benefit as much.</li>
+    <li>Initial detections still require independent verification to rule out false positives.</li>
+  </Cons>
+</ProsCons>
+
+## How to think about it
+Treat the cryptographic search as a front‑end filter: run it on any large, time‑tagged photon or event list to flag promising candidates, then allocate traditional, high‑precision timing analyses to those flags. Researchers can integrate the algorithm into existing pipelines, combine it with citizen‑science platforms for visual vetting, and adapt the core pattern‑matching logic to other wavelength regimes. Keeping a clear record of search parameters ensures reproducibility and helps quantify selection biases.
+
+<Callout type="warning">Do not assume the algorithm will find every pulsar; it can miss signals that fall outside its modeled parameter space and may produce false positives that need follow‑up confirmation.</Callout>
+
+## FAQ
+<FAQ>
+  <Question q="How does a cryptography technique help locate pulsars?">The algorithm repurposes fast hash‑based pattern matching, allowing it to compare observed photon arrival times against billions of hypothetical spin patterns without exhaustive trial‑and‑error loops.</Question>
+  <Question q="What limits does the method have?">It is tuned to the sparse, noisy gamma‑ray regime and assumes continuous spin‑down; pulsars with irregular timing or those emitting primarily at other wavelengths may evade detection.</Question>
+  <Question q="Can the approach be applied to other astronomical surveys?">Yes, the underlying principle can be adapted to any large, time‑tagged dataset—such as neutrino or fast‑radio‑burst catalogs—provided the signal model can be expressed in a comparable parameter space.</Question>
+</FAQ>
