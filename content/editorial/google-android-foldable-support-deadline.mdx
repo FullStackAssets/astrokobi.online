@@ -1,0 +1,55 @@
+---
+site: "astrokobi-online"
+title: "Google mandates Android apps meet foldable standards by April 2027"
+description: "Starting April 2027, Google will require Android apps to support foldable devices at a baseline level, or face publishing restrictions."
+date: "2026-11-19T08:00:21.262Z"
+category: "futures"
+tags: 
+  - "android"
+  - "foldables"
+  - "developers"
+  - "google"
+  - "appstore"
+hero: 
+  url: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Android_foldable_smartphones.jpg"
+  alt: "Android foldable smartphones"
+  credit: "The photo: Samsung Galaxy Z The screenshots: Google"
+  creditUrl: "https://commons.wikimedia.org/w/index.php?curid=112128204"
+sources: 
+  - title: "Google is forcing Android app developers to properly support foldables"
+    url: "https://www.theverge.com/tech/1036796/google-android-app-games-developers-foldables-support"
+  - title: "Google is forcing Android app developers to properly support foldables"
+    url: "https://www.theverge.com/tech/1036796/google-android-app-games-developers-foldables-support"
+---
+
+Google announced new compliance rules for Android apps on foldable devices. Beginning April 2027, apps must meet the Tier 3 — Adaptive ready standard or risk being blocked from Google Play. Game developers have a later deadline of August 2027. The policy arrives days after Apple released its iPhone Duo, which already boasts a growing catalog of optimized apps. The move signals a push toward a unified foldable experience across Android’s fragmented hardware ecosystem.
+<Callout type="takeaway">Android apps will need baseline foldable support by April 2027 or lose Play Store visibility.</Callout>
+## What happened
+Google requires all Android applications to achieve the Tier 3 — Adaptive ready level. The standard obliges apps to fill the display area without letterboxing, preserve state during folding, unfolding, rotation, and support multi‑window modes.
+Developers must also upload three foldable screenshots to their Play Store listings, a requirement that takes effect in April 2027. The two higher tiers—Adaptive optimized and Adaptive differentiated—allow deeper integration of foldable features, but Tier 3 is the minimum baseline. Google has indicated that future phases will extend similar rules to tablets and large‑screen laptops.
+Apple’s recent iPhone Duo launch, with more than 200,000 optimized apps, prompted Google to accelerate its own foldable strategy, aiming to avoid a fragmented user experience on Android devices.
+## Why it matters
+Ensuring a baseline foldable experience protects users from broken layouts and lost state when devices open or close, which could erode confidence in Android’s large‑screen ecosystem. Developers who comply gain continued visibility on Google Play, while those who lag may see reduced traffic or be barred from updates, impacting revenue. The rule also pressures the broader hardware market to prioritize software readiness, potentially speeding adoption of foldable phones and influencing competitor strategies.
+<ProsCons>
+  <Pros>
+    <li>Improves consistency of user experience across diverse Android foldables.</li>
+    <li>Creates a clear compliance target that can be built into development pipelines.</li>
+    <li>Aligns Android’s ecosystem with Apple’s early foldable rollout, reducing competitive disadvantage.</li>
+  </Pros>
+  <Cons>
+    <li>Small developers may lack resources to implement state‑preservation and multi‑window support.</li>
+    <li>Mandatory screenshots add extra design workload and may delay releases.</li>
+    <li>Enforcement could fragment the market if some devices remain unsupported.</li>
+  </Cons>
+</ProsCons>
+## How to think about it
+Start by auditing existing UI components for resize handling and state persistence. Use Android’s WindowManager and Jetpack libraries that already expose foldable callbacks, then add automated tests that simulate folding and unfolding events. Prioritize the three required screenshots early, capturing the app in both portrait and landscape fold states. If resources are limited, target the core user flows first and plan incremental enhancements for the higher tiers.
+<Callout type="warning">
+Do not postpone compliance until the deadline; late updates may be rejected, causing sudden loss of visibility.
+</Callout>
+## FAQ
+<FAQ>
+  <Question q="What happens if my app misses the April 2027 deadline?">The app will be flagged as non‑compliant, which can prevent new releases and reduce its ranking in search results on Google Play.</Question>
+  <Question q="Are the foldable screenshot requirements the same for games?">Yes, games must also provide three foldable screenshots starting in April 2027, though they have until August 2027 to meet the full Tier 3 functional requirements.</Question>
+  <Question q="Can I meet the Tier 3 standard using existing code?">Many Jetpack libraries already support adaptive layouts and state preservation, so developers can often achieve compliance with modest refactoring rather than a full rewrite.</Question>
+</FAQ>
